@@ -88,11 +88,10 @@ CREATE TABLE RESERVACION (
     ON UPDATE NO ACTION);
 
 CREATE TABLE RESERVAR_CLASE (
-  id INT NOT NULL AUTO_INCREMENT,
   cantidad_plazas INT NOT NULL,
   codigo_reservacion INT NOT NULL,
   id_clase INT NOT NULL,
-  PRIMARY KEY (id),
+  PRIMARY KEY (codigo_reservacion, id_clase),
   CONSTRAINT fk_RESERVAR_CLASE_RESERVACION1
     FOREIGN KEY (codigo_reservacion)
     REFERENCES RESERVACION (codigo)
