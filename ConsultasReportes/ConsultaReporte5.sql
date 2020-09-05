@@ -1,0 +1,2 @@
+SELECT C.*, COUNT(T.id_clase) demanda_clase FROM TARJETA_EMBARQUE T INNER JOIN CLASE C ON T.id_clase=C.id INNER JOIN VUELO V ON T.codigo_vuelo=V.codigo INNER JOIN AEROPUERTO A ON V.codigo_aeropuerto_llegada=A.codigo WHERE (CAST(V.fecha_y_hora_llegada AS DATE) BETWEEN '2020-08-01' AND '2020-08-11') AND A.pais='Guatemala' GROUP BY T.id_clase ORDER BY demanda_clase DESC LIMIT 1;
+#Las fechas y el pais son datos variables
