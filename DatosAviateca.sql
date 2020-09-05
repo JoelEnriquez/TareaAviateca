@@ -45,6 +45,7 @@ INSERT INTO VUELO (codigo_aeropuerto_salida,fecha_y_hora_salida,codigo_aeropuert
 INSERT INTO VUELO (codigo_aeropuerto_salida,fecha_y_hora_salida,codigo_aeropuerto_llegada,fecha_y_hora_llegada,codigo_avion) VALUES ('CN-001','2020-6-4 8:45','GT-001','2020-08-06 16:55',1);
 INSERT INTO VUELO (codigo_aeropuerto_salida,fecha_y_hora_salida,codigo_aeropuerto_llegada,fecha_y_hora_llegada,codigo_avion) VALUES ('GT-001','2020-10-21 8:45','PR-001','2020-08-06 16:55',1);
 INSERT INTO VUELO (codigo_aeropuerto_salida,fecha_y_hora_salida,codigo_aeropuerto_llegada,fecha_y_hora_llegada,codigo_avion) VALUES ('ES-002','2020-6-4 8:45','CN-001','2020-08-06 16:55',2);
+INSERT INTO VUELO (codigo_aeropuerto_salida,fecha_y_hora_salida,codigo_aeropuerto_llegada,fecha_y_hora_llegada,codigo_avion) VALUES ('AG-001','2020-8-5 21:00','ES-001','2020-08-05 23:30',1);
 
 INSERT INTO RESERVACION (fecha_reserva,estado,CLIENTE_DPI,VUELO_codigo) VALUES ('2020-8-5',0,'2320556340103',1);
 INSERT INTO RESERVACION (fecha_reserva,estado,CLIENTE_DPI,VUELO_codigo) VALUES ('2020-9-11',0,'4421232425454',2);
