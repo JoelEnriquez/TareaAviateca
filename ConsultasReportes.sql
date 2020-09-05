@@ -1,2 +1,2 @@
-select c.*, r.codigo from CLIENTE c INNER JOIN RESERVACION r ON r.CLIENTE_DPI=c.DPI where r.estado=1;
+SELECT c.*, r.codigo FROM CLIENTE c INNER JOIN RESERVACION r ON r.CLIENTE_DPI=c.DPI WHERE r.estado=1;
  

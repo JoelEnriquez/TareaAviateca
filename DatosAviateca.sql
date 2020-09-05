@@ -49,14 +49,14 @@ INSERT INTO RESERVACION (fecha_reserva,estado,CLIENTE_DPI,VUELO_codigo) VALUES (
 INSERT INTO RESERVACION (fecha_reserva,estado,CLIENTE_DPI,VUELO_codigo) VALUES ('2020-8-5',1,'1234225432342',1);
 
 INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (2,1,1);
-INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (5,1,2);
+INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (1,1,2);
 INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (2,2,2);
 INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (3,3,3);
-INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (4,4,1);
-INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (6,5,2);
-INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (3,6,1);
+INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (2,4,1);
+INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (3,5,2);
+INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (1,6,1);
 INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (2,6,2);
-
+INSERT INTO RESERVAR_CLASE (cantidad_plazas,codigo_reservacion,id_clase) VALUES (1,7,3);
 
 INSERT INTO TARJETA_EMBARQUE (fila,columna,piso,DPI_cliente,id_clase,codigo_vuelo)VALUES(1,1,1,'2320556340103',1,1);
 INSERT INTO TARJETA_EMBARQUE (fila,columna,piso,DPI_cliente,id_clase,codigo_vuelo)VALUES(2,1,2,'4421232425454',2,2);
