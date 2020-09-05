@@ -1,9 +1,9 @@
-
+DROP DATABASE AVIATECA;
 CREATE DATABASE AVIATECA;
 USE AVIATECA ;
 
 CREATE TABLE AEROPUERTO (
-  codigo INT NOT NULL AUTO_INCREMENT,
+  codigo VARCHAR(15) NOT NULL,
   nombre VARCHAR(45) NOT NULL,
   localidad VARCHAR(45) NOT NULL,
   pais VARCHAR(45) NOT NULL,
@@ -17,9 +17,9 @@ CREATE TABLE AVION (
 
 CREATE TABLE VUELO (
   codigo INT NOT NULL AUTO_INCREMENT,
-  codigo_aeropuerto_salida INT NOT NULL,
+  codigo_aeropuerto_salida VARCHAR(15) NOT NULL,
   fecha_y_hora_salida DATETIME NULL,
-  codigo_aeropuerto_llegada INT NOT NULL,
+  codigo_aeropuerto_llegada VARCHAR(15) NOT NULL,
   fecha_y_hora_llegada DATETIME NULL,
   codigo_avion INT NOT NULL,
   PRIMARY KEY (codigo),
@@ -40,12 +40,12 @@ CREATE TABLE VUELO (
     ON UPDATE NO ACTION);
 
 CREATE TABLE CLASE (
-  id INT NOT NULL,
+  id INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(45) NOT NULL,
   numero_plazas INT NOT NULL,
   PRIMARY KEY (id));
 
-CREATE TABLE ASIGAR_CLASE (
+CREATE TABLE ASIGNAR_CLASE (
   codigo_avion INT NOT NULL,
   codigo_clase INT NOT NULL,
   PRIMARY KEY (codigo_avion, codigo_clase),
